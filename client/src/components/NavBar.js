@@ -20,7 +20,7 @@ const style = {
   height: '4rem',
   top: '0',
   left: '0',
-  borderBottom: '2px solid var(--blue-primary)',
+  borderBottom: '2px solid var(--primary-color)',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',

@@ -1,0 +1,38 @@
+.edit-container {
+  width: 90vw;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-select {
+  position: relative;
+}
+
+.my-select select {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-color: var(--primary-color);
+  margin: 0.8rem 0 2rem 0;
+  font-family: Roboto, sans-serif;
+}
+
+.my-select .comment {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  font-family: Roboto, sans-serif;
+}
+
+.edit-btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
