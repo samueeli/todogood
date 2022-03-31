@@ -1,0 +1,67 @@
+/* Todos */
+.todos-container {
+  width: 90vw;
+  max-width: 600px;
+}
+
+.todos-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0.6rem 0.6rem;
+  color: white;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 3rem;
+  right: 1.1rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.todos-add:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Todo */
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 0;
+  box-shadow: 0 0 4px #8080807d;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.todo-container:hover {
+  box-shadow: 0 0 7px #6767677d;
+}
+
+.todo-del {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo-task {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.todo-person {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
