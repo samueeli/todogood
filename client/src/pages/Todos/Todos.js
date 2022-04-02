@@ -1,5 +1,6 @@
 import { Add } from '@mui/icons-material';
-import { Page } from '../../components/Page';
+import { NavLink } from 'react-router-dom';
+import { Page } from '../../common/Page';
 import { Todo } from './Todo/Todo';
 import './todos.css';
 
@@ -10,15 +11,16 @@ export const Todos = (props) => {
         <h2>ToDos</h2>
         {props.data.map((todo, i) => (
           <Todo
+            setSelected={props.setSelected}
             task={todo.task}
             person={todo.person}
             key={todo.id}
             id={todo.id}
           />
         ))}
-        <button className="todos-add">
+        <NavLink to="todo/create" className="todos-add">
           <Add fontSize="inherit" />
-        </button>
+        </NavLink>
       </div>
     </Page>
   );

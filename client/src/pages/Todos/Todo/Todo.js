@@ -1,14 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Checkbox, IconButton } from '@mui/material';
 import '../todos.css';
 
 export const Todo = (props) => {
-  const openEdit = (e) => {
-    e.preventDefault();
-    console.log('Samulin data:', props.id);
-  };
+  let navigate = useNavigate(props.id);
 
+  const openEdit = async (e) => {
+    e.preventDefault();
+    navigate(`/todo/edit/${props.id}`);
+  };
   return (
     <>
       <div className="todo-container">

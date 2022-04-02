@@ -25,7 +25,6 @@ const style = {
   justifyContent: 'space-between',
   alignItems: 'center',
   padding: '0 20px',
-  boxShadow: '0 0 5px gray',
   backgroundColor: 'white',
 };
 

@@ -1,13 +1,9 @@
-.edit-container {
+.todo-form-container {
   width: 90vw;
   max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.my-select {
-  position: relative;
 }
 
 .my-select select {
